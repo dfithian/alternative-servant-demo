@@ -1,0 +1,57 @@
+name: alternative-servant-demo
+version: '1.0'
+license: AllRightsReserved
+
+default-extensions:
+  - ConstraintKinds
+  - DataKinds
+  - DeriveDataTypeable
+  - DeriveGeneric
+  - EmptyDataDecls
+  - FlexibleContexts
+  - FlexibleInstances
+  - GADTs
+  - GeneralizedNewtypeDeriving
+  - LambdaCase
+  - MultiParamTypeClasses
+  - NamedFieldPuns
+  - NoImplicitPrelude
+  - NoMonomorphismRestriction
+  - OverloadedStrings
+  - PackageImports
+  - PolyKinds
+  - QuasiQuotes
+  - RankNTypes
+  - RecordWildCards
+  - ScopedTypeVariables
+  - StandaloneDeriving
+  - TemplateHaskell
+  - TupleSections
+  - TypeApplications
+  - TypeFamilies
+  - TypeOperators
+  - ViewPatterns
+
+ghc-options:
+  - -Wall
+  - -Werror
+  - -Wredundant-constraints
+  - -fwarn-tabs
+  - -threaded
+  - -O2
+  - -rtsopts
+  - -with-rtsopts=-N
+  - -with-rtsopts=-T
+
+dependencies:
+  - aeson
+  - base
+  - classy-prelude
+  - semigroupoids
+  - servant
+  - servant-client
+  - servant-client-core
+  - servant-server
+
+library:
+  source-dirs: src
